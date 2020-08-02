@@ -27,7 +27,7 @@ export interface Order {
   date?: Date
   order?: number
   user?: string
-  list: any[]
+  list: OrderPosition[]
   _id?: string
 }
 
@@ -36,4 +36,10 @@ export interface OrderPosition {
   cost: number
   quantity: number
   _id?: string
+}
+
+export interface Filter {
+  start?: Date
+  end?: Date
+  order?: number
 }

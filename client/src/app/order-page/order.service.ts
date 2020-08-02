@@ -37,10 +37,6 @@ export class OrderService {
     this.price = 0
   }
 
-  create(order) {
-
-  }
-
   private computePrice() {
     this.price = this.list.reduce((total, item) => {
       return total += item.quantity * item.cost

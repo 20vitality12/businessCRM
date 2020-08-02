@@ -50,7 +50,7 @@ module.exports.create = async function (req, res) {
         const order = await new Order({
             list,
             user,
-            order: maxOrder
+            order: maxOrder + 1
         }).save()
         res.status(201).json(order)
     } catch (e) {
